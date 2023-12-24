@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Movies App</string>
+    <string name="title_activity_main">Home</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="no_items_available">No items available</string>
+    <string name="add_to_wishlist">+ ADD TO WISHLIST</string>
+    <string name="remove_from_wishlist">REMOVE FROM WISHLIST</string>
+    <string name="watch_trailer">WATCH TRAILER</string>
+    <string name="preview_str">Preview</string>
+    <string name="on_my_wishlist">ON MY WISHLIST</string>
+    <string name="sort">Sort</string>
+    <string name="out_of_10">/10</string>
+    <string name="details">Details</string>
+    <string name="short_description">Short description</string>
+    <string name="genre">Genre</string>
+    <string name="released_date">Released Date</string>
+    <string name="movies">Movies</string>
+    <string name="by_release_date">by release date</string>
+    <string name="by_title">by title</string>
+</resources>

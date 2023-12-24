@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/sortMovies"
+        android:title="@string/sort"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/sortMoviesByTitle"
+                android:title="@string/by_title"/>
+            <item
+                android:id="@+id/sortMoviesByReleaseDate"
+                android:title="@string/by_release_date"/>
+        </menu>
+    </item>
+</menu>
+
