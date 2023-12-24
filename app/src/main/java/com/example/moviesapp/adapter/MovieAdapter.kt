@@ -11,7 +11,6 @@ import com.example.moviesapp.databinding.MovieItemBinding
 import com.example.moviesapp.fragments.HomeFragmentDirections
 import com.example.moviesapp.model.Movie
 
-
 class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
 
     class MovieViewHolder(val itemBinding: MovieItemBinding) : RecyclerView.ViewHolder(itemBinding.root)

@@ -9,7 +9,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
-import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.example.moviesapp.MainActivity
@@ -18,7 +17,6 @@ import com.example.moviesapp.databinding.FragmentMovieDetailsBinding
 import com.example.moviesapp.model.Movie
 import com.example.moviesapp.viewmodel.MovieViewModel
 import java.time.format.DateTimeFormatter
-
 
 class MovieDetailsFragment : Fragment(R.layout.fragment_movie_details) {
 
