@@ -41,6 +41,8 @@ class MovieDetailsFragment : Fragment(R.layout.fragment_movie_details) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         movieViewModel = (activity as MainActivity).movieViewModel
+        (activity as MainActivity).setActionBarExpanded(MainActivity.ActionBarStyle.REGULAR)
+
         currentMovie = args.movie!!
 
         binding.movieImage.setImageResource(currentMovie.movieImage)

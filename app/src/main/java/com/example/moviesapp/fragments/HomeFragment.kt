@@ -38,6 +38,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         movieViewModel = (activity as MainActivity).movieViewModel
+        (activity as MainActivity).setActionBarExpanded(MainActivity.ActionBarStyle.COLLAPSING)
 
         setUpRecyclerView()
 
@@ -62,7 +63,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             }
         }, viewLifecycleOwner, Lifecycle.State.RESUMED)
     }
-
 
     private fun setUpRecyclerView() {
         movieAdapter = MovieAdapter()

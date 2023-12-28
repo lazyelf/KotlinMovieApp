@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         setUpViewModel()
 
         setSupportActionBar(binding.toolbar)
+
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main) as NavHostFragment
         val navController = navHostFragment.navController
         appBarConfiguration = AppBarConfiguration(navController.graph)
@@ -46,4 +47,16 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
+
+    enum class ActionBarStyle {
+        REGULAR, COLLAPSING
+    }
+
+    fun setActionBarExpanded(actionBarStyle : ActionBarStyle) {
+        when (actionBarStyle) {
+            ActionBarStyle.REGULAR -> binding.appBarLayout.setExpanded(false, false)
+            ActionBarStyle.COLLAPSING -> binding.appBarLayout.setExpanded(true, true)
+        }
+    }
+
 }
