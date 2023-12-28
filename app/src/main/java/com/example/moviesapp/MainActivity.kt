@@ -59,4 +59,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun setNavigationIcon() {
+        binding.toolbar.setNavigationIcon(R.drawable.baseline_arrow_back)
+    }
+
 }

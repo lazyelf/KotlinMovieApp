@@ -33,6 +33,9 @@ class MovieDetailsFragment : Fragment(R.layout.fragment_movie_details) {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentMovieDetailsBinding.inflate(inflater, container, false)
+
+        (activity as MainActivity).setNavigationIcon()
+
         return binding.root
     }
 
