@@ -41,7 +41,7 @@ class MovieViewModel(
 
     @RequiresApi(Build.VERSION_CODES.O)
     fun addPlugs() {
-        val plugs = listOf<Movie>(
+        val plugs = listOf(
             Movie(0,
                 R.drawable.tenet,
                 "Tenet",

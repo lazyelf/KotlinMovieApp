@@ -16,7 +16,7 @@ class MoviesViewModelFactory(
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>) : T {
         val viewModel = MovieViewModel(app, moviesRepository)
-        if (viewModel.getAllMovies().value?.isEmpty() == true)
+        if (viewModel.getAllMovies().value.isNullOrEmpty())
             viewModel.addPlugs()
         return viewModel as T
     }
